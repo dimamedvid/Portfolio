@@ -424,19 +424,23 @@
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text" class="contacts__input">
+                            <input required name="name" id="name" type="text" class="contacts__input">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email" class="contacts__input">
+                            <input required name="email" id="email" type="email" class="contacts__input">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text" class="contacts__textarea"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="btn contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" id="policy" required>
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
