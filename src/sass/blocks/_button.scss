@@ -3,8 +3,9 @@
     background: $main_color;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 12px 25px;
+    transition: all 0.3s;
     &:hover {
         background: darken($main_color, 3%);
-        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     }
 }
