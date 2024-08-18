@@ -12,6 +12,11 @@
         padding: 30px 30px 25px;
         border: 1px solid #000;
         background: rgba(196, 196, 196, 0);
+        transition: all .4s;
+        &:hover {
+            transform:translateY(-5px);
+            box-shadow:0 10px 20px rgba(0,0,0,.2);
+        }
         &-title {
             margin-top: 20px;
         }
@@ -19,6 +24,9 @@
             margin-top: 15px;
             font-size: 12px;
             font-weight: 500;
+        }
+        &-img {
+            height: 63px;
         }
     }
     &__ratings{
