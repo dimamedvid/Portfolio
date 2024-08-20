@@ -2,6 +2,11 @@
     .sidepanel {
         display: none;
     }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(1, minmax(270px, auto)) / repeat(4, 270px);
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -27,6 +32,17 @@
         &__wrapper {
             column-gap: 70px;
             padding: 60px 22px 0;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(1, minmax(270px, auto)) / repeat(3, 305px);
+        }
+        &__ratings {
+            grid-template: repeat(2, 70px) / repeat(3, 289px);
+            &-line {
+                width: 290px;
+            }
         }
     }
 }
@@ -64,6 +80,21 @@
             grid-template-columns: repeat(2, 302px);
         }
     }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(1, minmax(270px, auto)) / repeat(3, 225px);
+            padding: 20px 10px 0;
+        }
+        &__ratings {
+            grid-template: repeat(2, 70px) / repeat(3, 224px);
+            &-line {
+                width: 225px;
+            }
+            &-item {
+                grid-template: 21px 14px / 189px 35px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -98,10 +129,26 @@
         }
     }
     .resume{
+        padding-top: 40px;
         &__wrapper {
             grid-template-columns: repeat(2, 260px);
             column-gap: 30px;
             padding: 40px 0 0;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: repeat(1, minmax(270px, auto)) / repeat(2, 249px);
+            row-gap: 20px;
+        }
+        &__ratings {
+            row-gap: 40px;
+            padding-top: 40px;
+            grid-template: repeat(2, 70px) / repeat(2, 256px);
+            &-line {
+                width: 1fr;
+            }
         }
     }
 }
@@ -147,6 +194,20 @@
             grid-template: auto auto / 1fr;
             row-gap: 40px;
             padding: 40px 0 0;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template: 270px / 1fr;
+        }
+        &__ratings {
+            grid-template: repeat(2, 70px) / 1fr;
+            &-line {
+                width: auto;
+            }
+            &-item {
+                grid-template: 21px 14px / 1fr 35px;
+            }
         }
     }
 }
