@@ -13,6 +13,8 @@ closeElem.addEventListener('click', () => {
 const counter = document.querySelectorAll('.skills__ratings-counter'),
     lines = document.querySelectorAll('.skills__ratings-line span');
 
+console.log(counter);
+
 counter.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
